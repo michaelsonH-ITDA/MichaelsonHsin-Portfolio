@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='shortcut icon' type='image/x-icon' href='../Picture/favicon.ico' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="../CSS/portfolio.css" rel="stylesheet" />
+    <title>Contact Me</title>
+    <style>
+        html, body {
+            background-image: linear-gradient(rgb(7, 7, 7), rgb(34, 62, 85));
+        }
+        .navbar {
+            padding: 0;
+             margin: 0;
+        }
+
+        .navbar a {
+            height: 54px;
+        }
+        .contact-title {
+            text-align: center;
+            margin-top: 100px;
+            color:#fff;
+            text-transform: uppercase;
+            transition: all 4s ease-in-out;
+        }
+
+        .contact-title h1{
+            font-size: 32px;
+            line-height: 10px;
+        }
+        .contact-title h2{
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+      <div id="name_title">YI-HSIEN HSIN</div>
+      <div class="topnav">
+        
+        <div id="myLinks">
+        <a id ="listNav" href="../index.html">Home</a>
+        <a id ="listNav" href="Resume.html">Resume</a>
+        <a id ="listNav" href="acadamic_sample_goal.html">Work Sample & Goals</a>
+        <a id ="listNav" href="Hobby.html">Hobby</a>
+        <a id ="listNav" href="Contact.html">Contact</a>
+        </div>
+        
+        <a href="javascript:void(1);" class="icon" onclick="myFunction()" id="navicon">
+        <i class="fa fa-bars"></i>
+        </a>
+      </div>
+  
+      <script>
+        function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+        }
+      </script>
+    </div>
+
+    <div class="contact-title">
+        <h1>Say Hello</h1>
+        <h2>I am pleasing to response any question!</h2>
+    </div>
+
+    <section style="margin-top: 50px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <h5 class="card-header">Contact me if you want to hire me or work with me!</h5>
+                        <div class="card-body">
+                            <form class="contact__form" method="post" action="../mail.php">
+                                
+                                <!-- form message -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                                            Your message was sent successfully.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end message -->
+    
+                                <!-- form element -->
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <input name="name" type="text" class="form-control" placeholder="Name" required>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <input name="email" type="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <input name="phone" type="text" class="form-control" placeholder="Phone" required>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <input name="subject" type="text" class="form-control" placeholder="Subject" required>
+                                    </div>
+                                    <div class="col-12 form-group">
+                                        <textarea name="message" class="form-control" rows="3" placeholder="Message" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <input name="submit" type="submit" class="btn btn-success" value="Send Message">
+                                    </div>
+                                </div>
+                                <!-- end form element -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../main.js"></script>
+
+
+</body>
+
+<footer class="home">
+    <a href="Contact.html"><button style="margin-top: 20px;">&#x21E7; To the top</button></a><br>
+    <a href="https://ca.linkedin.com/in/yi-hsien-hsin-a126b9179"><i class="fa fa-linkedin" id="hover-contact" style="font-size:48px;color:white;margin-top: 20px;"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100009715039066"><i class="fa fa-facebook" id="hover-contact" style="font-size:48px;color:white;margin-left: 20px;"></i></a>
+    <a href="https://twitter.com/search?q=MichaelsonHsin&src=typd"><i class="fa fa-twitter" id="hover-contact" style="font-size:48px;color:white;margin-left: 20px;"></i></a><br>
+    <p>Copyright © 2020 YI-HSIEN HSIN - All rights reserved</p>
+</footer>
+</html> 
